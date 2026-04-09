@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <radialGradient id="bg1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(340 180) rotate(41) scale(410 410)">
+      <stop stop-color="#2b63ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2b63ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 340) rotate(48) scale(340 340)">
+      <stop stop-color="#e37a2a" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#e37a2a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="198" y1="164" x2="882" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4677ff"/>
+      <stop offset="0.35" stop-color="#6b94ff"/>
+      <stop offset="0.68" stop-color="#c7a0be"/>
+      <stop offset="1" stop-color="#ee9f69"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#050816"/>
+  <rect width="1200" height="630" fill="url(#bg1)"/>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="#11182d" fill-opacity="0.92" stroke="rgba(255,255,255,0.14)"/>
+  <text x="118" y="180" fill="url(#title)" font-family="Inter, Arial, sans-serif" font-size="84" font-weight="800">VPNReview.us</text>
+  <text x="118" y="258" fill="#f4f7ff" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="700">Readable VPN reviews</text>
+  <text x="118" y="332" fill="#aab4d6" font-family="Inter, Arial, sans-serif" font-size="30">Clear picks for casual users. Deeper notes for privacy nerds.</text>
+  <text x="118" y="378" fill="#aab4d6" font-family="Inter, Arial, sans-serif" font-size="30">NordVPN, Proton VPN, and Surfshark.</text>
+  <rect x="118" y="432" width="220" height="56" rx="18" fill="#3d6cff"/>
+  <text x="153" y="468" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Compare the picks</text>
+</svg>
