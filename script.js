@@ -2,11 +2,27 @@
 const toggle = document.querySelector('.menu-toggle');
 const panel = document.querySelector('.mobile-panel');
 if (toggle && panel) {
+  const closeMobilePanel = () => {
+    panel.setAttribute('data-open', 'false');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
   toggle.addEventListener('click', () => {
     const open = panel.getAttribute('data-open') === 'true';
     panel.setAttribute('data-open', String(!open));
     toggle.setAttribute('aria-expanded', String(!open));
   });
+
+  panel.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMobilePanel);
+  });
+
+  const desktopQuery = window.matchMedia('(min-width: 961px)');
+  const handleDesktopResize = (event) => {
+    if (event.matches) closeMobilePanel();
+  };
+  handleDesktopResize(desktopQuery);
+  desktopQuery.addEventListener('change', handleDesktopResize);
 }
 document.querySelectorAll('[data-year]').forEach((node) => {
   node.textContent = new Date().getFullYear();
